@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Jupyter Notebook Launcher
+GenericName=Jupyter Notebook
+comment=Open selected .ipynb file in your default web browser via Jupyter
+Exec=open_ipynb.sh %F
+Type=Application
+MimeType=application/x-ipynb+json;
+NoDisplay=true
+Terminal=false

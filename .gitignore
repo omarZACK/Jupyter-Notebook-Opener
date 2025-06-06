@@ -1,0 +1,44 @@
+# === Bash Script Project .gitignore ===
+JupyterOpener.png
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor backups and temp files
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# macOS Finder files
+.AppleDouble
+.LSOverride
+
+# Trash folder which might appear on external volumes
+.Trashes
+
+# Python/Jupyter (if used with Anaconda)
+__pycache__/
+*.py[cod]
+.env
+.venv
+.envrc
+
+# Jupyter runtime and config
+.ipynb_checkpoints/
+jupyter_notebook_config.py
+
+# Anaconda environments
+anaconda3/
+.conda/
+.condarc
