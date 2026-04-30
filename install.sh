@@ -53,6 +53,7 @@ fi
 
 # Step 4: Install launcher script and desktop entry
 echo "📂 Installing launcher script and desktop entry..."
+mkdir -p ~/.local/bin/
 cp "$SCRIPT_DIR/open_ipynb.sh" ~/.local/bin/
 chmod +x ~/.local/bin/open_ipynb.sh
 
