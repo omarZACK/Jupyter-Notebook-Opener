@@ -41,7 +41,7 @@ source "$ENV_PATH/bin/activate"
 # Step 3: Install Jupyter if missing
 if ! command -v jupyter &>/dev/null; then
     echo "🔍 Jupyter not found. Installing via pip..."
-    pip install jupyter --quit &
+    pip install jupyter -q &
     pid=$!
     progress_bar 50 &
     wait $pid
