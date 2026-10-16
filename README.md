@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="JupyterLauncherLogo.png" width="150" alt="Jupyter Notebook Launcher Logo">
+  <img src="https://github.com/user-attachments/assets/61663781-a7a1-4551-8566-8e9dbe752e04" width="150" alt="Jupyter Notebook Launcher Logo">
   <br><br>
   <strong>A seamless way to open Jupyter Notebooks from your file manager using the system browser.</strong>
   <br><br>
@@ -65,12 +65,12 @@ It ensures:
 
 2. **Make the installation script executable**:
    ```bash
-   chmod +x install.sh
+   chmod +x scripts/install.sh
    ```
 
 3. **Run the installation script to configure the Notebook Opener**:
    ```bash
-   ./install.sh
+   ./scripts/install.sh
    ```
    
 ---

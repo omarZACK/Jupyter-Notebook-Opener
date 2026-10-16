@@ -2,7 +2,7 @@
 
 ENV_PATH="$HOME/.Jenv"
 INSTALL_DIR="$HOME/.local/share/applications"
-SCRIPT_DIR="$(pwd)"
+SCRIPT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 
 # Function to show a text progress bar
 progress_bar() {
@@ -54,13 +54,13 @@ fi
 # Step 4: Install launcher script and desktop entry
 echo "📂 Installing launcher script and desktop entry..."
 mkdir -p ~/.local/bin/
-cp "$SCRIPT_DIR/open_ipynb.sh" ~/.local/bin/
+cp "$SCRIPT_DIR/scripts/open_ipynb.sh" ~/.local/bin/
 chmod +x ~/.local/bin/open_ipynb.sh
 
-cp "$SCRIPT_DIR/jupyter-ipynb.desktop" "$INSTALL_DIR/"
+cp "$SCRIPT_DIR/desktop/jupyter-ipynb.desktop" "$INSTALL_DIR/"
 update-desktop-database "$INSTALL_DIR"
 
-cp "$SCRIPT_DIR/ipynb.xml" ~/.local/share/mime/packages
+cp "$SCRIPT_DIR/desktop/ipynb.xml" ~/.local/share/mime/packages
 update-mime-database ~/.local/share/mime/
 xdg-mime default jupyter-ipynb.desktop application/x-ipynb+json
 
