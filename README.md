@@ -31,6 +31,9 @@ It ensures:
 - A Jupyter server starts if not already running
 - The selected notebook opens in the browser automatically
 - Uses your system's **default browser**, not hardcoded to any
+- Works with common Linux distributions, including Debian-based, RPM-based,
+  Arch, openSUSE/SUSE, Gentoo, and other distributions that provide Python 3
+  and the XDG desktop utilities
 
 ---
 
@@ -72,6 +75,24 @@ It ensures:
    ```bash
    ./scripts/install.sh
    ```
+
+The installer uses a Python virtual environment and does not require
+administrator privileges. If the virtual environment cannot be created, install
+Python 3 and its virtual-environment support using your distribution's package
+manager. For example:
+
+| Distribution family | Packages or command |
+| --- | --- |
+| Debian / Ubuntu | `sudo apt install python3 python3-venv` |
+| Fedora / RHEL | `sudo dnf install python3` |
+| Arch | `sudo pacman -S python` |
+| openSUSE / SUSE | `sudo zypper install python311` |
+| Gentoo | `sudo emerge dev-lang/python` |
+
+The optional `update-desktop-database`, `update-mime-database`, and `xdg-mime`
+utilities are used when available. If they are missing, the launcher is still
+installed and the script prints the manual follow-up needed for desktop
+integration.
    
 ---
 
