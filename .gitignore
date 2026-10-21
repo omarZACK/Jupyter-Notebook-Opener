@@ -17,6 +17,10 @@ Thumbs.db
 # VS Code
 .vscode/
 
+# Local Copilot tooling
+.agents/
+skills-lock.json
+
 # JetBrains IDEs
 .idea/
 
